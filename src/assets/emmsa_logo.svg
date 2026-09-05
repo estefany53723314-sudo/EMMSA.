@@ -1,0 +1,264 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient for badge or canvas -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F8FAFC" />
+    </linearGradient>
+
+    <!-- Laurel Leaves Teal/Cyan Gradient -->
+    <linearGradient id="leafTeal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B5C71" />
+      <stop offset="50%" stop-color="#0E7490" />
+      <stop offset="100%" stop-color="#14B8A6" />
+    </linearGradient>
+
+    <linearGradient id="leafTeal2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#14B8A6" />
+      <stop offset="70%" stop-color="#0B5C71" />
+      <stop offset="100%" stop-color="#083344" />
+    </linearGradient>
+
+    <linearGradient id="leafSoft" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2DD4BF" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+
+    <!-- Lab Coat Gradient -->
+    <linearGradient id="coatBody" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="85%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#F1F5F9" />
+    </linearGradient>
+
+    <linearGradient id="coatShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E2E8F0" />
+      <stop offset="50%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+
+    <!-- Scrub Shirt Gradient -->
+    <linearGradient id="scrubGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5EEAD4" />
+      <stop offset="100%" stop-color="#0F766E" />
+    </linearGradient>
+
+    <!-- Pink Pin Gradient -->
+    <radialGradient id="pinkPin" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#FDA4AF" />
+      <stop offset="40%" stop-color="#FB7185" />
+      <stop offset="100%" stop-color="#E11D48" />
+    </radialGradient>
+
+    <!-- Stethoscope Metal Highlight -->
+    <linearGradient id="metalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F1F5F9" />
+      <stop offset="50%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#475569" />
+    </linearGradient>
+
+    <!-- Soft Drop Shadow Filter -->
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#0B5C71" flood-opacity="0.12" />
+    </filter>
+
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.08" />
+    </filter>
+  </defs>
+
+  <!-- Clean Background -->
+  <rect width="500" height="500" rx="48" fill="url(#bgGrad)" />
+
+  <g transform="translate(0, -10)">
+    <!-- ==================== LAUREL WREATH BRANCHES ==================== -->
+    <!-- LEFT LAUREL BRANCH -->
+    <g id="left-wreath" filter="url(#subtleShadow)">
+      <!-- Main Stem -->
+      <path d="M 215 315 C 160 310 95 250 100 170 C 103 125 125 90 148 70" 
+            fill="none" stroke="#0B5C71" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Left Leaves Pairs -->
+      <!-- Lower leaves -->
+      <path d="M 210 315 C 190 325 175 330 155 325 C 165 310 185 305 205 312 Z" fill="url(#leafTeal1)" />
+      <path d="M 185 305 C 165 315 145 312 130 300 C 145 290 168 292 182 300 Z" fill="url(#leafTeal2)" />
+
+      <!-- Mid-lower leaves -->
+      <path d="M 155 285 C 130 295 110 288 95 270 C 115 260 138 268 152 280 Z" fill="url(#leafTeal1)" />
+      <path d="M 135 260 C 110 268 92 255 82 235 C 100 228 122 238 132 255 Z" fill="url(#leafSoft)" />
+      <path d="M 120 230 C 95 235 80 220 72 198 C 92 195 110 208 118 225 Z" fill="url(#leafTeal2)" />
+
+      <!-- Mid leaves -->
+      <path d="M 108 198 C 85 200 72 182 68 160 C 88 160 102 175 107 192 Z" fill="url(#leafTeal1)" />
+      <path d="M 104 165 C 82 162 72 142 72 120 C 92 125 102 142 103 160 Z" fill="url(#leafSoft)" />
+
+      <!-- Upper leaves -->
+      <path d="M 108 135 C 90 128 85 108 90 88 C 108 95 112 115 107 130 Z" fill="url(#leafTeal2)" />
+      <path d="M 120 108 C 105 98 105 78 115 60 C 128 72 128 92 119 104 Z" fill="url(#leafTeal1)" />
+      <path d="M 138 88 C 128 75 132 55 148 42 C 155 58 150 78 137 85 Z" fill="url(#leafSoft)" />
+
+      <!-- Terminal top leaf -->
+      <path d="M 148 70 C 145 52 158 38 172 32 C 175 48 165 62 148 70 Z" fill="url(#leafTeal1)" />
+
+      <!-- Delicate Pink Accent Buds / Berries on Left -->
+      <circle cx="160" cy="300" r="4" fill="#FB7185" />
+      <circle cx="125" cy="265" r="4.5" fill="#FB7185" />
+      <circle cx="98" cy="205" r="4" fill="#FDA4AF" />
+      <circle cx="95" cy="145" r="4.5" fill="#FB7185" />
+      <circle cx="120" cy="85" r="4" fill="#FDA4AF" />
+    </g>
+
+    <!-- RIGHT LAUREL BRANCH (Symmetrical) -->
+    <g id="right-wreath" filter="url(#subtleShadow)">
+      <!-- Main Stem -->
+      <path d="M 285 315 C 340 310 405 250 400 170 C 397 125 375 90 352 70" 
+            fill="none" stroke="#0B5C71" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Right Leaves Pairs -->
+      <!-- Lower leaves -->
+      <path d="M 290 315 C 310 325 325 330 345 325 C 335 310 315 305 295 312 Z" fill="url(#leafTeal1)" />
+      <path d="M 315 305 C 335 315 355 312 370 300 C 355 290 332 292 318 300 Z" fill="url(#leafTeal2)" />
+
+      <!-- Mid-lower leaves -->
+      <path d="M 345 285 C 370 295 390 288 405 270 C 385 260 362 268 348 280 Z" fill="url(#leafTeal1)" />
+      <path d="M 365 260 C 390 268 408 255 418 235 C 400 228 378 238 368 255 Z" fill="url(#leafSoft)" />
+      <path d="M 380 230 C 405 235 420 220 428 198 C 408 195 390 208 382 225 Z" fill="url(#leafTeal2)" />
+
+      <!-- Mid leaves -->
+      <path d="M 392 198 C 415 200 428 182 432 160 C 412 160 398 175 393 192 Z" fill="url(#leafTeal1)" />
+      <path d="M 396 165 C 418 162 428 142 428 120 C 408 125 398 142 397 160 Z" fill="url(#leafSoft)" />
+
+      <!-- Upper leaves -->
+      <path d="M 392 135 C 410 128 415 108 410 88 C 392 95 388 115 393 130 Z" fill="url(#leafTeal2)" />
+      <path d="M 380 108 C 395 98 395 78 385 60 C 372 72 372 92 381 104 Z" fill="url(#leafTeal1)" />
+      <path d="M 362 88 C 372 75 368 55 352 42 C 345 58 350 78 363 85 Z" fill="url(#leafSoft)" />
+
+      <!-- Terminal top leaf -->
+      <path d="M 352 70 C 355 52 342 38 328 32 C 325 48 335 62 352 70 Z" fill="url(#leafTeal1)" />
+
+      <!-- Delicate Pink Accent Buds / Berries on Right -->
+      <circle cx="340" cy="300" r="4" fill="#FB7185" />
+      <circle cx="375" cy="265" r="4.5" fill="#FB7185" />
+      <circle cx="402" cy="205" r="4" fill="#FDA4AF" />
+      <circle cx="405" cy="145" r="4.5" fill="#FB7185" />
+      <circle cx="380" cy="85" r="4" fill="#FDA4AF" />
+    </g>
+
+
+    <!-- ==================== DOCTOR IN LAB COAT ==================== -->
+    <g id="doctor-figure" filter="url(#softShadow)">
+      <!-- Neck / Throat -->
+      <path d="M 232 155 C 232 145 240 135 250 135 C 260 135 268 145 268 155 L 268 175 L 232 175 Z" 
+            fill="#FBD5C4" />
+
+      <!-- Inner Scrub V-Neck -->
+      <path d="M 226 172 L 250 208 L 274 172 L 268 165 L 232 165 Z" 
+            fill="url(#scrubGrad)" stroke="#0F766E" stroke-width="1.5" />
+
+      <!-- Lab Coat Shoulders & Torso Body -->
+      <path d="M 180 200 C 185 182 205 170 230 166 
+               L 250 166 
+               L 270 166 C 295 170 315 182 320 200 
+               L 335 275 C 335 295 320 310 290 312 
+               L 210 312 C 180 310 165 295 165 275 Z" 
+            fill="url(#coatBody)" stroke="#CBD5E1" stroke-width="2.5" />
+
+      <!-- Coat Center Seam and Shadow -->
+      <line x1="250" y1="245" x2="250" y2="312" stroke="#E2E8F0" stroke-width="2" />
+      <circle cx="250" cy="262" r="2.5" fill="#CBD5E1" />
+      <circle cx="250" cy="288" r="2.5" fill="#CBD5E1" />
+
+      <!-- Left Folded Lapel (Viewer's Left) -->
+      <path d="M 230 166 L 195 210 L 228 238 L 250 245 L 238 200 L 232 172 Z" 
+            fill="#FFFFFF" stroke="#94A3B8" stroke-width="2" />
+      <path d="M 230 166 L 202 206 L 226 232" fill="none" stroke="#E2E8F0" stroke-width="1" />
+
+      <!-- Right Folded Lapel (Viewer's Right) -->
+      <path d="M 270 166 L 305 210 L 272 238 L 250 245 L 262 200 L 268 172 Z" 
+            fill="#FFFFFF" stroke="#94A3B8" stroke-width="2" />
+      <path d="M 270 166 L 298 206 L 274 232" fill="none" stroke="#E2E8F0" stroke-width="1" />
+
+      <!-- Pocket on Chest (Left side of doctor / viewer's right) -->
+      <path d="M 282 245 L 308 245 L 306 270 C 306 274 284 274 284 270 Z" 
+            fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.8" />
+
+      <!-- ==================== PINK LAPEL BADGE / PIN ==================== -->
+      <!-- Circular Rose Pink Badge on Doctor's Left Lapel (Viewer's Right) -->
+      <g id="pink-badge">
+        <circle cx="288" cy="216" r="10.5" fill="url(#pinkPin)" stroke="#FFFFFF" stroke-width="2" filter="url(#subtleShadow)" />
+        <circle cx="285" cy="213" r="3" fill="#FFFFFF" opacity="0.75" />
+      </g>
+
+      <!-- ==================== STETHOSCOPE ==================== -->
+      <!-- Binaural Metal Arches behind/around collar -->
+      <path d="M 232 152 C 224 140 236 128 244 128 C 248 128 252 135 252 142" 
+            fill="none" stroke="url(#metalGrad)" stroke-width="3" stroke-linecap="round" />
+      <path d="M 268 152 C 276 140 264 128 256 128 C 252 128 248 135 248 142" 
+            fill="none" stroke="url(#metalGrad)" stroke-width="3" stroke-linecap="round" />
+
+      <!-- Main Rubber Tubing Hanging Around Neck -->
+      <!-- Left Tube Loop -->
+      <path d="M 226 172 C 215 190 212 215 220 240 C 224 252 235 260 245 255" 
+            fill="none" stroke="#1E293B" stroke-width="4.5" stroke-linecap="round" />
+      <!-- Left Tube Shadow Highlight -->
+      <path d="M 227 174 C 217 192 214 215 222 238" 
+            fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+      <!-- Right Tube Loop -->
+      <path d="M 274 172 C 282 190 284 212 276 232 C 270 246 256 252 245 255" 
+            fill="none" stroke="#1E293B" stroke-width="4.5" stroke-linecap="round" />
+      <!-- Right Tube Highlight -->
+      <path d="M 273 174 C 280 192 282 212 275 230" 
+            fill="none" stroke="#475569" stroke-width="1.5" stroke-linecap="round" />
+
+      <!-- Lower Lead to Chestpiece -->
+      <path d="M 245 255 C 240 265 232 275 226 280" 
+            fill="none" stroke="#1E293B" stroke-width="4.5" stroke-linecap="round" />
+
+      <!-- Stethoscope Chestpiece / Diaphragm (Campana) -->
+      <g id="stethoscope-chestpiece" transform="translate(222, 282)">
+        <circle cx="0" cy="0" r="11" fill="url(#metalGrad)" stroke="#334155" stroke-width="1.5" />
+        <circle cx="0" cy="0" r="7.5" fill="#1E293B" />
+        <circle cx="-2.5" cy="-2.5" r="2.5" fill="#94A3B8" opacity="0.6" />
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== EMMSA TYPOGRAPHY WITH FLOURISH ==================== -->
+  <g id="emmsa-brand-text" filter="url(#subtleShadow)">
+    <text x="250" y="405" 
+          text-anchor="middle" 
+          font-family="'Playfair Display', 'Didot', 'Cinzel', 'Georgia', serif" 
+          font-size="62" 
+          font-weight="900" 
+          letter-spacing="5" 
+          fill="#0B5C71">
+      EMMSA
+    </text>
+
+    <!-- Bespoke Decorative Calligraphic Swash on the "A" -->
+    <!-- Curving gracefully from the right leg of the A, sweeping smoothly below the name with elegant tapered curve -->
+    <path d="M 338 402 
+             C 352 405, 372 414, 376 426 
+             C 378 433, 370 439, 355 440 
+             C 325 442, 260 435, 205 432 
+             C 175 430, 145 432, 130 438
+             C 125 440, 120 438, 122 435
+             C 126 430, 145 425, 175 423
+             C 230 420, 310 425, 345 422
+             C 362 420, 368 412, 350 407
+             C 342 405, 335 403, 330 402 Z" 
+          fill="#0B5C71" />
+
+    <!-- Subtitle / Brand Tagline -->
+    <text x="250" y="468" 
+          text-anchor="middle" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-size="14" 
+          font-weight="700" 
+          letter-spacing="2.5" 
+          fill="#0E7490">
+      RECORDATORIO DE MEDICAMENTOS
+    </text>
+  </g>
+</svg>

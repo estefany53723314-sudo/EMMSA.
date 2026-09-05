@@ -1,0 +1,199 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="20 20 460 460" width="100%" height="100%">
+  <defs>
+    <!-- Background paper watercolor gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="80%" stop-color="#fcfcfc" />
+      <stop offset="100%" stop-color="#f8f9fa" />
+    </radialGradient>
+
+    <!-- Teal to Cyan leaf gradient left -->
+    <linearGradient id="leafGradLeft" x1="50%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Teal to Cyan leaf gradient right -->
+    <linearGradient id="leafGradRight" x1="50%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0f766e" />
+      <stop offset="40%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- EMMSA Text Gradient: Petrol teal to cerulean cyan -->
+    <linearGradient id="emmsaGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00585e" />
+      <stop offset="25%" stop-color="#087f8c" />
+      <stop offset="55%" stop-color="#0284c7" />
+      <stop offset="85%" stop-color="#0ea5e9" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+
+    <!-- Doctor coat lapel shadow gradient -->
+    <linearGradient id="lapelShadow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e2e8f0" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="500" height="500" fill="url(#bgGlow)" rx="32" />
+
+  <!-- ==================== DOCTOR ILLUSTRATION ==================== -->
+  <g id="doctor" transform="translate(0, 5)">
+    <!-- Neck / Collar -->
+    <!-- Skin Neck -->
+    <path d="M 226 102 C 226 102, 238 108, 250 108 C 262 108, 274 102, 274 102 L 270 128 C 260 132, 240 132, 230 128 Z" fill="#fbcfe8" opacity="0.6" />
+    <path d="M 226 102 C 226 102, 238 108, 250 108 C 262 108, 274 102, 274 102 L 269 125 C 260 128, 240 128, 231 125 Z" fill="#fecaca" />
+    <!-- White inner tee collar -->
+    <path d="M 230 124 C 240 130, 260 130, 270 124 L 268 144 C 258 148, 242 148, 232 144 Z" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.5" />
+
+    <!-- Lab Coat Body -->
+    <!-- Base Coat Silhouette -->
+    <path d="M 228 122 C 205 125, 185 142, 175 168 L 164 245 C 164 250, 172 254, 182 254 L 318 254 C 328 254, 336 250, 336 245 L 325 168 C 315 142, 295 125, 272 122 Z" fill="#ffffff" stroke="#94a3b8" stroke-width="2" stroke-linejoin="round" />
+
+    <!-- Inner Lapel Folds (Grey Shadow) -->
+    <path d="M 230 124 L 212 175 L 246 175 L 250 254 L 250 175 L 288 175 L 270 124 Z" fill="#f1f5f9" />
+    <path d="M 230 124 L 212 175 L 250 175 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5" />
+    <path d="M 270 124 L 288 175 L 250 175 Z" fill="#e2e8f0" stroke="#cbd5e1" stroke-width="1.5" />
+
+    <!-- Center Coat Line -->
+    <line x1="250" y1="175" x2="250" y2="254" stroke="#cbd5e1" stroke-width="2" />
+    <!-- Coat Buttons -->
+    <circle cx="250" cy="205" r="2" fill="#94a3b8" />
+    <circle cx="250" cy="230" r="2" fill="#94a3b8" />
+
+    <!-- Coat Pockets -->
+    <line x1="184" y1="228" x2="208" y2="228" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" />
+    <line x1="292" y1="228" x2="316" y2="228" stroke="#cbd5e1" stroke-width="2" stroke-linecap="round" />
+
+    <!-- STETHOSCOPE -->
+    <!-- Left Stethoscope Tube (curves down, loops up to chestpiece with heart) -->
+    <path d="M 215 126 C 196 145, 190 175, 194 200 C 197 218, 212 225, 222 216 C 230 208, 234 190, 226 172 C 224 167, 219 164, 215 164" fill="none" stroke="#1e293b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    <!-- Chestpiece (bell) -->
+    <circle cx="214" cy="164" r="9" fill="#1e293b" />
+    <circle cx="214" cy="164" r="7" fill="#334155" />
+    <!-- Tiny Heart inside Chestpiece -->
+    <path d="M 214 167 C 214 167, 210.5 164.5, 210.5 162.5 C 210.5 161.2, 211.5 160.5, 212.5 160.5 C 213.3 160.5, 213.8 161, 214 161.5 C 214.2 161, 214.7 160.5, 215.5 160.5 C 216.5 160.5, 217.5 161.2, 217.5 162.5 C 217.5 164.5, 214 167, 214 167 Z" fill="#ffffff" />
+
+    <!-- Right Stethoscope Tube (curves down to pink badge) -->
+    <path d="M 268 126 C 278 140, 284 158, 282 175 L 273 178" fill="none" stroke="#1e293b" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+    
+    <!-- Circular Pink Badge on Right Lapel -->
+    <circle cx="270" cy="180" r="9.5" fill="#1e293b" />
+    <circle cx="270" cy="180" r="8" fill="#fda4af" />
+    <circle cx="270" cy="180" r="5" fill="#f43f5e" opacity="0.85" />
+    <circle cx="270" cy="180" r="2" fill="#881337" />
+  </g>
+
+
+  <!-- ==================== LAUREL WREATH ==================== -->
+  <g id="laurel-wreath">
+    <!-- Bottom Crossed Stems -->
+    <path d="M 235 272 C 245 268, 255 268, 265 272" fill="none" stroke="#0f766e" stroke-width="3" stroke-linecap="round" />
+
+    <!-- LEFT BRANCH STEM -->
+    <path d="M 248 268 C 205 268, 142 240, 126 182 C 114 140, 134 95, 160 62" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Left Branch Leaves -->
+    <!-- Lower leaves (teal #0f766e, #0d9488) -->
+    <path d="M 230 262 C 210 260, 195 248, 198 236 C 208 245, 222 254, 230 262 Z" fill="#0d9488" />
+    <path d="M 215 272 C 195 278, 178 274, 178 260 C 190 262, 206 266, 215 272 Z" fill="#0f766e" />
+    <path d="M 188 246 C 168 240, 155 226, 160 214 C 170 224, 182 236, 188 246 Z" fill="#0d9488" />
+    <path d="M 175 258 C 152 260, 140 250, 144 238 C 156 242, 168 250, 175 258 Z" fill="#0891b2" />
+
+    <!-- Mid leaves (cerulean #0284c7) -->
+    <path d="M 154 220 C 135 208, 126 190, 134 180 C 142 192, 150 206, 154 220 Z" fill="#0284c7" />
+    <path d="M 140 232 C 120 228, 110 214, 118 202 C 126 210, 135 222, 140 232 Z" fill="#0891b2" />
+    <path d="M 132 188 C 116 172, 114 154, 124 144 C 130 158, 132 174, 132 188 Z" fill="#0284c7" />
+    <path d="M 118 198 C 100 190, 96 172, 106 162 C 112 172, 116 186, 118 198 Z" fill="#0369a1" />
+
+    <!-- Upper leaves (cyan #38bdf8) -->
+    <path d="M 124 150 C 114 132, 118 114, 130 106 C 132 120, 130 136, 124 150 Z" fill="#38bdf8" />
+    <path d="M 112 158 C 96 146, 98 128, 110 120 C 114 132, 114 146, 112 158 Z" fill="#0284c7" />
+    <path d="M 132 115 C 126 98, 134 82, 146 76 C 146 90, 140 104, 132 115 Z" fill="#38bdf8" />
+    <path d="M 122 120 C 110 105, 116 90, 128 84 C 130 96, 128 109, 122 120 Z" fill="#38bdf8" />
+
+    <!-- Left Top 3-Petal Flower Bud -->
+    <g transform="translate(156, 60)">
+      <path d="M 0 0 C -12 -12, -18 -25, -12 -30 C -6 -28, -2 -18, 0 0 Z" fill="#38bdf8" opacity="0.9" />
+      <path d="M 0 0 C 0 -16, 5 -32, 12 -32 C 14 -24, 8 -12, 0 0 Z" fill="#0284c7" />
+      <path d="M 0 0 C -6 -14, -4 -28, 2 -32 C 6 -26, 4 -14, 0 0 Z" fill="#7dd3fc" />
+      <circle cx="0" cy="0" r="3" fill="#0891b2" />
+    </g>
+
+
+    <!-- RIGHT BRANCH STEM -->
+    <path d="M 252 268 C 295 268, 358 240, 374 182 C 386 140, 366 95, 340 62" fill="none" stroke="#0891b2" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Right Branch Leaves -->
+    <!-- Lower leaves (teal #0f766e, #0d9488) -->
+    <path d="M 270 262 C 290 260, 305 248, 302 236 C 292 245, 278 254, 270 262 Z" fill="#0d9488" />
+    <path d="M 285 272 C 305 278, 322 274, 322 260 C 310 262, 294 266, 285 272 Z" fill="#0f766e" />
+    <path d="M 312 246 C 332 240, 345 226, 340 214 C 330 224, 318 236, 312 246 Z" fill="#0d9488" />
+    <path d="M 325 258 C 348 260, 360 250, 356 238 C 344 242, 332 250, 325 258 Z" fill="#0891b2" />
+
+    <!-- Mid leaves (cerulean #0284c7) -->
+    <path d="M 346 220 C 365 208, 374 190, 366 180 C 358 192, 350 206, 346 220 Z" fill="#0284c7" />
+    <path d="M 360 232 C 380 228, 390 214, 382 202 C 374 210, 365 222, 360 232 Z" fill="#0891b2" />
+    <path d="M 368 188 C 384 172, 386 154, 376 144 C 370 158, 368 174, 368 188 Z" fill="#0284c7" />
+    <path d="M 382 198 C 400 190, 404 172, 394 162 C 388 172, 384 186, 382 198 Z" fill="#0369a1" />
+
+    <!-- Upper leaves (cyan #38bdf8) -->
+    <path d="M 376 150 C 386 132, 382 114, 370 106 C 368 120, 370 136, 376 150 Z" fill="#38bdf8" />
+    <path d="M 388 158 C 404 146, 402 128, 390 120 C 386 132, 386 146, 388 158 Z" fill="#0284c7" />
+    <path d="M 368 115 C 374 98, 366 82, 354 76 C 354 90, 360 104, 368 115 Z" fill="#38bdf8" />
+    <path d="M 378 120 C 390 105, 384 90, 372 84 C 370 96, 372 109, 378 120 Z" fill="#38bdf8" />
+
+    <!-- Right Top 3-Petal Flower Bud -->
+    <g transform="translate(344, 60)">
+      <path d="M 0 0 C 12 -12, 18 -25, 12 -30 C 6 -28, 2 -18, 0 0 Z" fill="#38bdf8" opacity="0.9" />
+      <path d="M 0 0 C 0 -16, -5 -32, -12 -32 C -14 -24, -8 -12, 0 0 Z" fill="#0284c7" />
+      <path d="M 0 0 C 6 -14, 4 -28, -2 -32 C -6 -26, -4 -14, 0 0 Z" fill="#7dd3fc" />
+      <circle cx="0" cy="0" r="3" fill="#0891b2" />
+    </g>
+  </g>
+
+
+  <!-- ==================== EMMSA TYPOGRAPHY WITH SIGNATURE FLOURISHES ==================== -->
+  <g id="emmsa-text" transform="translate(0, 38)">
+    <!-- 'E' with authentic top-left spiral swirl -->
+    <!-- Spiral Flourish on top-left of E -->
+    <path d="M 58 335 C 50 326, 48 314, 54 304 C 62 292, 78 290, 88 300 C 96 308, 95 320, 86 328 C 80 334, 70 332, 67 325 C 65 318, 70 312, 75 314 C 77 315, 78 318, 77 320 C 75 322, 72 321, 72 318 C 72 312, 85 308, 86 316 C 87 322, 80 328, 72 328 C 62 328, 56 318, 62 308 C 70 296, 88 298, 96 310 L 102 310 L 102 390 L 88 390 L 88 316 C 88 314, 82 314, 78 315" fill="#00585e" />
+
+    <!-- 'E' Main Body -->
+    <!-- Vertical stem -->
+    <path d="M 98 310 L 120 310 L 120 390 L 92 390 L 92 384 L 98 384 Z" fill="#00585e" />
+    <!-- Bottom serif & arm of E -->
+    <path d="M 92 384 L 148 384 C 150 384, 154 378, 154 370 L 148 370 C 146 376, 142 377, 120 377 L 120 354 L 142 354 C 146 354, 148 358, 148 362 L 152 362 L 152 344 L 148 344 C 148 348, 146 350, 142 350 L 120 350 L 120 316 L 146 316 C 150 316, 152 318, 152 324 L 156 324 L 154 308 L 98 308 Z" fill="url(#emmsaGradient)" />
+
+    <!-- FIRST 'M' -->
+    <g transform="translate(162, 308)">
+      <!-- Left Stem with serifs -->
+      <path d="M 0 6 L 8 6 L 8 82 L 0 82 L 0 76 L 5 76 L 5 12 L 0 12 Z" fill="#087f8c" />
+      <path d="M 5 6 L 18 6 L 36 68 L 54 6 L 68 6 L 68 12 L 63 12 L 63 76 L 68 76 L 68 82 L 54 82 L 54 76 L 59 76 L 59 18 L 42 78 L 30 78 L 13 18 L 13 76 L 18 76 L 18 82 L 5 82 Z" fill="url(#emmsaGradient)" />
+    </g>
+
+    <!-- SECOND 'M' -->
+    <g transform="translate(242, 308)">
+      <path d="M 0 6 L 8 6 L 8 82 L 0 82 L 0 76 L 5 76 L 5 12 L 0 12 Z" fill="#0284c7" />
+      <path d="M 5 6 L 18 6 L 36 68 L 54 6 L 68 6 L 68 12 L 63 12 L 63 76 L 68 76 L 68 82 L 54 82 L 54 76 L 59 76 L 59 18 L 42 78 L 30 78 L 13 18 L 13 76 L 18 76 L 18 82 L 5 82 Z" fill="url(#emmsaGradient)" />
+    </g>
+
+    <!-- 'S' -->
+    <g transform="translate(322, 308)">
+      <path d="M 40 22 C 38 12, 30 6, 20 6 C 10 6, 2 12, 2 22 C 2 32, 10 37, 24 42 C 38 47, 46 54, 46 66 C 46 78, 35 84, 22 84 C 10 84, 2 76, 0 64 L 6 62 C 8 72, 14 78, 22 78 C 30 78, 38 72, 38 64 C 38 54, 30 48, 18 43 C 6 38, -4 30, -4 20 C -4 9, 6 0, 20 0 C 32 0, 42 8, 44 20 Z" fill="url(#emmsaGradient)" />
+    </g>
+
+    <!-- 'A' WITH SIGNATURE CALLIGRAPHIC SWASH / TAIL -->
+    <g transform="translate(372, 308)">
+      <!-- Left leg & Apex -->
+      <path d="M 28 6 L 38 6 L 10 82 L 0 82 L 0 76 L 5 76 L 24 16 L 16 16 L 16 10 L 28 10 Z" fill="#0ea5e9" />
+      <!-- Crossbar -->
+      <path d="M 16 56 L 42 56 L 40 50 L 18 50 Z" fill="#38bdf8" />
+      <!-- Right leg flowing into magnificent looping calligraphy -->
+      <path d="M 32 6 L 42 6 L 70 82 C 75 95, 82 106, 92 110 C 102 114, 114 110, 118 100 C 122 90, 115 80, 102 76 C 90 72, 75 75, 62 84 C 48 94, 38 108, 30 116 C 24 122, 18 124, 12 120 C 6 115, 6 105, 12 95 C 20 82, 35 72, 50 68 L 52 74 C 38 78, 26 88, 20 98 C 16 104, 16 110, 20 113 C 24 116, 30 113, 36 107 C 46 98, 56 86, 68 78 C 82 68, 98 66, 110 70 C 124 75, 132 88, 128 102 C 122 116, 106 122, 92 118 C 78 114, 70 100, 64 82 L 40 16 L 46 16 L 46 10 L 32 10 Z" fill="url(#emmsaGradient)" />
+    </g>
+  </g>
+</svg>

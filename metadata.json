@@ -1,0 +1,6 @@
+{
+  "name": "EMMSA - Recordatorio de Medicamentos",
+  "description": "Plataforma de gestión y recordatorio de medicamentos desarrollada para Colegio Técnico Industrial José Elías Puyana.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
